@@ -1,12 +1,16 @@
 import React from "react";
 import './Home.css'
+import { ReactComponent as AddIcon } from '../assets/icons/add.svg'
+import { ReactComponent as MarkFill } from '../assets/icons/markfill.svg'
+import { ReactComponent as Notice } from '../assets/icons/notice.svg'
+
 
 function FacebookEffect() {
     return (
         <Navbar>
-            <NavItem icon="😊"></NavItem>
-            <NavItem icon="😊"></NavItem>
-            <NavItem icon="😊"></NavItem> 
+            <NavItem icon={<AddIcon />}></NavItem>
+            <NavItem icon={<MarkFill />}></NavItem>
+            <NavItem icon={<Notice />}></NavItem> 
         </Navbar>
     )
 }
